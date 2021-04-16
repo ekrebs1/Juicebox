@@ -1,18 +1,12 @@
 {
-  "name": "juicebox",
+  "name": "Juicebox",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "seed:dev": "nodemon ./db/seed.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "pg": "^8.6.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
-  }
+  "license": "ISC"
 }
