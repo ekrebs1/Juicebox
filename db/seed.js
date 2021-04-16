@@ -50,9 +50,27 @@ async function dropTables() {
     try {
       console.log("Starting to create users...");
   
-      const albert = await createUser({ username: 'albert', password: 'bertie99', name:'Al Bert', location:'Sidney, Australia' });
-      const sandra = await createUser({ username: 'sandra', password: '2sandy4me', name:'Just Sandra', location:"Ain't tellin" });
-      const glamgal = await createUser({ username: 'glamgal', password: 'soglam', name:'Joshua', location:'Upper East Side' });
+      const albert = await createUser({ 
+        username: 'albert', 
+        password: 'bertie99', 
+        name:'Al Bert', 
+        location:'Sidney, Australia' 
+      });
+
+      const sandra = await createUser({ 
+        username: 'sandra', 
+        password: '2sandy4me', 
+        name:'Just Sandra', 
+        location:"Ain't tellin" 
+      });
+
+      const glamgal = await createUser({ 
+        username: 'glamgal', 
+        password: 'soglam', 
+        name:'Joshua', 
+        location:'Upper East Side' 
+      });
+
       console.log(albert, sandra, glamgal);
 
       
@@ -89,6 +107,7 @@ async function dropTables() {
         name: "Newname Sogood",
         location: "Lesterville, KY"
       });
+      
       console.log("Result:", updateUserResult);
   
       console.log("Finished database tests!");
