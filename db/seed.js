@@ -8,6 +8,7 @@ const {
   getAllPosts,
   getPostsByUser,
   createTags,
+  updatePost,
   createPostTag,
   addTagsToPost,
   getPostsByTagName,
