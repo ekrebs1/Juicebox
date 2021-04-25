@@ -110,7 +110,12 @@ async function getUserByUsername(username) {
  * POST Methods
  */
 
-async function createPost({ authorId, title, content, tags = [] }) {
+async function createPost({ 
+  authorId, 
+  title, 
+  content, 
+  tags = [] 
+}) {
   try {
     const {
       rows: [post],
@@ -306,6 +311,14 @@ async function getPostById(postId) {
     `,
       [postId]
     );
+
+    //throw error if invalid id to get posts
+    if (!post) {
+      throw {
+        name: "PostNotFoundError",
+        message: "Could not find a post with that postId"
+      };
+    }
 
     const { rows: tags } = await client.query(
       `

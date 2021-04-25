@@ -5,13 +5,11 @@ const {
   getAllUsers,
   getUserById,
   createPost,
-  updatePost,
   getAllPosts,
   getPostsByUser,
   createTags,
   createPostTag,
   addTagsToPost,
-  getPostById,
   getPostsByTagName,
   getUserByUsername
 } = require("./index");
